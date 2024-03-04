@@ -168,7 +168,7 @@ jobs:
   macos-release-build-universal:
     name: macOS (Universal)
     if: ${{ (github.event.inputs.macos-x64-arm64 || 'true') == 'true' }}
-    runs-on: macos-12
+    runs-on: macos-11
     steps:
     - name: Install Tools
       run: >
